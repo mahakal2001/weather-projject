@@ -1,0 +1,303 @@
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile */
+[class*="col-"]{
+    width: 100%;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar start */
+
+.navbar{
+    background-color: rgb(18, 139, 139);
+    padding: 1% 7%;
+    text-align: center;
+}
+
+.navLogo img{
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 5px 5px 15px black;
+    
+    
+}
+
+.navLogo img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+.navHeading h2{
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+    font-family: 'Satisfy', cursive;
+    font-weight: bolder;
+    
+}
+
+
+
+.navMenu{
+    display: flex;
+    flex-direction: row;
+}
+
+.navMenu a{
+    right: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 7px 15px;
+    background-color: rgb(6, 92, 92);
+    text-decoration: none;
+    color: orange;
+}
+
+.navMenu a:hover{
+    transform: scale(1.1);
+    background-color: rgb(105, 103, 101);
+    color: yellow;
+    
+}
+
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Navbar End */
+
+.row{
+    margin: 0;
+}
+
+
+.leftBar{
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* h1 and p style */
+
+.leftBar h1{
+    font-family: 'Satisfy', cursive;
+}
+
+.rightBar img{
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.rightBar{
+    margin-top: 60px;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    margin-top: auto;
+
+    /* footer jodi nicha na asa --> body{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    tarpor --> footer ay ase margin-top:auto; */
+
+    
+
+}
+footer p{
+    margin: 0;
+    text-align: center;
+    line-height: 5rem;
+    color: white;
+}
+
+
+
+/* About page */
+.leftBarAbout img{
+    height: 25rem;
+
+}
+
+.main_headerAbout{
+    margin-top: 90px;
+}
+
+
+/* h1 and p style */
+
+.leftBarAbout h1{
+    font-family: 'Satisfy', cursive;
+}
+
+.rightBarAbout h1{
+    font-family: 'Satisfy', cursive;
+}
+
+.rightBarAbout{
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+}
+
+
+/* 404 Error page */
+.errimage img{
+    width: 70rem;
+    height: 50rem;
+
+}
+
+/* Button style */
+.btndemo button{
+    float: right;
+    background-color: rgb(8, 8, 8);
+    color: white;
+    border-radius: 30px;
+    width: 130px;
+    line-height: 50px;
+    box-shadow: 5px 5px 15px red;
+    font-size: 1rem;
+}
+
+.btndemo button:hover{
+    transform: scale(1.2);
+}
+
+/* span style */
+.spandemo{
+    font-size: 3rem;
+    color: red;
+}
+
+
+/* temp input fields style code...... */
+.temp_form{
+    width: 60%;
+    position: relative;
+    margin: 1rem auto 1rem ;
+}
+.temp_form input[type="text"]{
+    width: 100%;
+    padding: 1rem 1rem 1rem 1rem;
+    background: #1e202b;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 20rem;
+}
+::placeholder{
+    color: #bfc1c8;
+}
+.temp_form input[type="submit"]{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background: #009ad8; 
+    padding: 0 3rem;
+    border-radius: 20rem;
+    color: white;
+    font-size: 1.6rem;
+}
+.temp_form input[type="submit"]:hover{
+    color: #009ad8;
+    background-color: #fff;
+}
+
+
+
+/* temp details show here...... */
+.tempInformation{
+    width: 30rem;
+    margin: auto;
+    min-height: 10rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    /* padding: 1rem; */
+    font-family: "Roboto", sans-serif;
+}
+.top_layer{
+    width: 100%;
+    height: 20%;
+    background-color: #2d303d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    
+}
+.top_layer p{
+    color: #fff;
+    font-weight: 300;
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+.main_layer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.main_layer #city_name{
+    padding: 2rem 0;
+    color: #bfc1c8;
+    font-weight: 300;
+    font-size: 2rem;
+}
+.main_layer .middle_layer{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+.main_layer .middle_layer p,
+.main_layer .middle_layer .fa {
+    font-size: 3rem;
+    font-weight: 400;
+}
+.fa{
+    color: #009ad8;
+}
+sup{
+    font-size: 2rem;
+    margin-top: -1rem;
+}
+.data_hide{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+
+
